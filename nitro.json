@@ -1,0 +1,24 @@
+{
+  "$schema": "https://nitro.margelo.com/nitro.schema.json",
+  "cxxNamespace": ["orientationlocker"],
+  "ios": {
+    "iosModuleName": "NitroOrientationLocker"
+  },
+  "android": {
+    "androidNamespace": ["orientationlocker"],
+    "androidCxxLibName": "NitroOrientationLocker"
+  },
+  "autolinking": {
+    "OrientationLocker": {
+      "ios": {
+        "language": "swift",
+        "implementationClassName": "HybridOrientationLocker"
+      },
+      "android": {
+        "language": "kotlin",
+        "implementationClassName": "HybridOrientationLocker"
+      }
+    }
+  },
+  "ignorePaths": ["node_modules", "lib"]
+}

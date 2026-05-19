@@ -1,0 +1,103 @@
+{
+  "name": "@tenthdart/react-native-nitro-orientation-locker",
+  "version": "0.0.1",
+  "description": "High-performance Nitro module for locking screen orientation on React Native (New Architecture only).",
+  "main": "./lib/commonjs/index.js",
+  "module": "./lib/module/index.js",
+  "types": "./lib/typescript/index.d.ts",
+  "react-native": "./src/index.ts",
+  "source": "./src/index.ts",
+  "files": [
+    "src",
+    "lib",
+    "android",
+    "ios",
+    "cpp",
+    "nitrogen/generated",
+    "NitroOrientationLocker.podspec",
+    "react-native.config.js",
+    "nitro.json",
+    "README.md",
+    "LICENSE",
+    "!**/.DS_Store",
+    "!**/__tests__",
+    "!**/__fixtures__",
+    "!**/__mocks__",
+    "!ios/build",
+    "!android/build",
+    "!android/.gradle",
+    "!android/.cxx",
+    "!**/*.tsbuildinfo"
+  ],
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "specs": "nitrogen",
+    "clean": "rimraf lib nitrogen/generated",
+    "build": "bob build",
+    "prepare": "bob build",
+    "prepublishOnly": "bob build"
+  },
+  "keywords": [
+    "react-native",
+    "nitro",
+    "nitro-modules",
+    "orientation",
+    "orientation-locker",
+    "landscape",
+    "portrait",
+    "tablet",
+    "ios",
+    "android",
+    "visionos"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tenthdart/react-native-nitro-orientation-locker.git"
+  },
+  "homepage": "https://github.com/tenthdart/react-native-nitro-orientation-locker#readme",
+  "bugs": {
+    "url": "https://github.com/tenthdart/react-native-nitro-orientation-locker/issues"
+  },
+  "author": {
+    "name": "Tenthdart",
+    "email": "ar.372920118@gmail.com",
+    "url": "https://github.com/tenthdart"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">= 18.0.0"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": ">=0.76.0",
+    "react-native-nitro-modules": ">=0.22.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "nitrogen": "^0.35.0",
+    "react": "19.1.0",
+    "react-native": "0.81.0",
+    "react-native-builder-bob": "^0.40.0",
+    "react-native-nitro-modules": "^0.35.0",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.6.0"
+  },
+  "react-native-builder-bob": {
+    "source": "src",
+    "output": "lib",
+    "targets": [
+      "commonjs",
+      "module",
+      [
+        "typescript",
+        {
+          "project": "tsconfig.build.json"
+        }
+      ]
+    ]
+  }
+}

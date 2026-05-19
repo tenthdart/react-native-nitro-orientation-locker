@@ -1,0 +1,12 @@
+{
+  "extends": "./tsconfig.json",
+  "exclude": [
+    "node_modules",
+    "lib",
+    "nitrogen/generated",
+    "**/__tests__",
+    "**/__fixtures__",
+    "**/__mocks__",
+    "example"
+  ]
+}

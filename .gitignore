@@ -1,0 +1,15 @@
+node_modules/
+lib/
+.DS_Store
+*.log
+.idea/
+.vscode/
+build/
+.gradle/
+Pods/
+Podfile.lock
+*.xcworkspace
+ios/build/
+android/build/
+android/.gradle/
+.bob/

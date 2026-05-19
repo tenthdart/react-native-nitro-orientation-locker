@@ -1,0 +1,3 @@
+# Use package.json "files" as the source of truth.
+# This file exists only to override npm's default ignore behavior so that
+# the "files" allowlist alone determines the published tarball.
